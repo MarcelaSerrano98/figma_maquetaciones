@@ -1,0 +1,131 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    color: #2c2c2c;
+    background: linear-gradient(135deg, #f5f1eb 0%, #ede4d6 30%, #a4cdd6 70%, #8ac3d0 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr; 
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+    max-width: 1300px;
+}
+
+.content-column {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.text-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.text-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 450px;
+    margin: 0;
+}
+
+.cta-button {
+    background-color: #252525;
+    color: white;
+    text-decoration: none;
+    padding: 12px 35px;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.cta-button:hover {
+    background-color: #4d4d4d;
+}
+
+.feature-cards-container {
+    display: flex;
+    gap: 24px;
+}
+
+.feature-card {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 32px;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feature-card img {
+    width: 48px;
+    height: 48px;
+}
+
+.feature-card p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.visual-column {
+    position: relative;
+    width: 100%;
+    height: 650px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.visual-column img {
+    position: absolute;
+}
+
+.deco-stroke {
+    width: 100%;
+    max-width: 530px;
+    z-index: 1;
+}
+
+.main-image {
+    width: 83%;
+    max-width: 440px;
+    z-index: 2;
+}
+
+.deco-star-top {
+    width: 80px;
+    top: 20px;
+    left: 20px;
+    z-index: 3;
+}
+
+.deco-star-bottom {
+    width: 120px;
+    bottom: 40px;
+    right: 0;
+    z-index: 3;
+}

@@ -1,0 +1,80 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-image: url('/pagina_36/img/Image\ bg\ \(1\).png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.text-block {
+    color: white;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.text-block h1 {
+    font-size: 64px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+.text-block p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0;
+}
+
+.info-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+}
+
+.info-card {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.info-card img {
+    width: 24px; 
+    height: 24px;
+    flex-shrink: 0; 
+}
+
+.info-card p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+

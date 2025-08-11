@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.page-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 60px;
+    width: 100%;
+    max-width: 1300px;
+    align-items: flex-start;
+}
+
+.content-column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.text-block h1 {
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.text-block p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 490px;
+    color: #555;
+    margin: 0;
+}
+
+.cta-button {
+    background-color: #252525;
+    color: white;
+    text-decoration: none;
+    padding: 16px 32px;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.cta-button:hover {
+    background-color: #4d4d4d;
+}
+
+.calorie-badges {
+    display: flex;
+    gap: 24px;
+}
+
+.calorie-badges img {
+    width: 148px;
+    height: 148px;
+}
+
+.info-cards-container {
+    display: flex;
+    gap: 24px;
+    background-color: #F5F5F5;
+    border-radius: 24px;
+    padding: 20px;
+}
+
+.info-card {
+    flex: 1;
+}
+
+.info-card h3 {
+    font-size: 20px;
+    margin: 0 0 8px 0;
+}
+
+.info-card p {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+    line-height: 1.5;
+}
+
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 24px;
+    align-items: start; 
+}
+
+.gallery-img {
+    width: 100%;
+    height: auto;
+    border-radius: 24px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+}

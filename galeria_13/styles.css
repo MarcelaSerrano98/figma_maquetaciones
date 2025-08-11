@@ -1,0 +1,195 @@
+/* --- Configuración General --- */
+body {
+    background-color: #f4f4f6; /* Fondo general gris muy claro */
+    font-family: 'Poppins', sans-serif; /* Fuente principal para párrafos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+.container {
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    margin-top:20px ;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden; 
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+.gradient-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle at 30% 30%, #a6e3e9, transparent 40%),
+                radial-gradient(circle at 70% 70%, #f4c4f3, transparent 40%);
+    filter: blur(100px); 
+    opacity: 0.6;
+    z-index: 1; 
+}
+
+
+.arch-frame {
+    position: absolute;
+    overflow: hidden;
+    z-index: 1; 
+    width: 412px;
+    height: 528px;
+}
+
+.arch-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #ccc; 
+}
+
+.frame-left {
+    background-color: #eeba5d; /* Color mostaza */
+    width: 350px;
+    height: 500px;
+    bottom: 0;
+    bottom: 50px;
+    left: 60px;
+
+    border-radius: 175px 175px 0 0; /* Redondeo superior para formar el arco */
+}
+
+.frame-right {
+    width: 380px;
+    height: 520px;
+    top: 50px;
+    right: 60px;
+    /* border-radius: 0 0 190px 190px; */
+}
+.frame-right img{
+    background-color: transparent; 
+
+}
+
+.main-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 3; /* La capa más alta */
+}
+
+
+
+
+.main-content h1 {
+    font-family: 'Playfair Display', serif; /* Fuente elegante para el título */
+    font-size: 112px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0 0 20px 0;
+    color: #2c2c2c;
+}
+
+.main-content p {
+    font-size: 24px;
+    color: #555;
+    max-width: 400px;
+    margin: 0 auto 30px auto;
+}
+
+.main-content button {
+    background-color: #252525;
+    color: #fff;
+    border: none;
+    padding: 14px 40px;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.main-content button:hover {
+    background-color: #4a4a4a;
+}
+
+
+.info-text {
+    position: absolute;
+    width: 500px;
+    z-index: 3;
+}
+
+
+
+.info-text span {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #333;
+}
+
+.info-text p {
+    margin: 5px 0 0 0;
+    font-size: 24px;
+    color: rgb(37, 37, 37, 0.8);
+    line-height: 1.5;
+}
+
+.text-top-left {
+    top: 60px;
+    left: 60px;
+}
+
+.text-bottom-right {
+    bottom: 60px;
+    right: 60px;
+}
+
+
+.shape {
+    position: absolute;
+    background-color: #ddd; 
+    z-index: 2; 
+}
+
+.star-blue {
+    top: 200px;
+    left: 100px;
+    width: 179px;
+    height: 176px;
+    background-color: transparent;
+
+}
+
+.star-four-1 {
+    top: 280px;
+    left: 250px;
+    width: 255px;
+    height: 320px;
+    background-color: transparent;
+
+}
+
+.star-four-2 {
+    bottom: 260px;
+    right: 280px;
+    width: 191x;
+    height: 242px;
+    background-color: transparent;
+}
+
+.sunburst-gold {
+    bottom: 220px;
+    right: 100px;
+    width: 174px;
+    height: 174px;
+    background-color: transparent;
+
+}

@@ -1,0 +1,116 @@
+:root {
+    --c6: #4DABF7;
+} 
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'geo', sans-serif;
+}
+
+@font-face {
+    font-family: 'geo';
+    src: url('/Main/fonts/Geomanist-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #EAEAEA; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+.page-container {
+    width: 100%;
+    max-width: 1400px;
+    height: 90vh;
+    max-height: 800px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    overflow: hidden; 
+    border-radius: 20px;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: 1; 
+}
+
+.info-card {
+    position: relative; 
+    z-index: 2;
+    width: 460px;
+    padding: 40px;
+    border-radius: 24px;
+    background-color: rgba(217, 223, 230, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 24px; 
+    color: #333;
+}
+
+.info-card__tag {
+    font-size: 14px;
+    font-weight: bold;
+    color: #444;
+}
+
+.info-card__title {
+    font-size: 48px;
+    line-height: 1.1;
+    color: #1a2a45;
+}
+
+.info-card__description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4a5568;
+}
+
+.info-card__button {
+    background-color: #519BFD;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+.info-card__button:hover {
+    transform: scale(1.05);
+}
+
+
+.pose-gallery {
+    position: relative; 
+    z-index: 2;
+    height: 80%;
+    object-fit: contain;
+}

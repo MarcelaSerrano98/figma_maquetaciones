@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'geo', sans-serif;
+}
+
+@font-face {
+    font-family: 'geo';
+    src: url('/Main/fonts/Geomanist-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    color: #343a40;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+.page-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr; 
+    align-items: center;
+    gap: 60px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.hero-title {
+    font-size: 56px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.hero-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #6c757d;
+    max-width: 400px;
+}
+
+.hero-button {
+    background-color: #212529;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 50px;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+.hero-button:hover {
+    background-color: #495057;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.feature-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 10px;
+}
+
+.icon-wrapper {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-wrapper img {
+    width: 24px;
+    height: 24px;
+}
+
+.card-text h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.card-text p {
+    font-size: 14px;
+    color: #6c757d;
+    line-height: 1.5;
+}
+
+.gallery-section {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.gallery-item {
+    flex: 1; 
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 250px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.item-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    color: white;
+    font-size: 14px;
+}

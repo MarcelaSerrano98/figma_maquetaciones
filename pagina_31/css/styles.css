@@ -1,0 +1,168 @@
+/* --- ESTILOS GLOBALES --- */
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    background-color: #FBF4DF;
+    color: #252525;
+}
+
+.page-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- SECCIÓN SUPERIOR (HERO) --- */
+.hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+/* --- Contenido de la izquierda --- */
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.deco-star-top {
+    width: 60px;
+    margin-left: 20px;
+}
+
+.resizable-box {
+    position: relative;
+    border: 2px solid #252525;
+    width: 100%;
+    max-width: 420px;
+    padding: 30px;
+}
+
+.resizable-box h1 {
+    font-size: 2.8rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.corner-handle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #EFC356;
+    border: 2px solid #252525;
+}
+
+.top-left { top: -12px; left: -12px; }
+.top-right { top: -12px; right: -12px; }
+.bottom-left { bottom: -12px; left: -12px; }
+.bottom-right { bottom: -12px; right: -12px; }
+
+.hero-content p {
+    max-width: 400px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.cta-button {
+    text-decoration: none;
+    color: white;
+    background-color: #252525;
+    padding: 14px 40px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.cta-button:hover {
+    background-color: #4d4d4d;
+}
+
+/* --- Contenido de la derecha (Imagen) --- */
+.hero-visual {
+    position: relative;
+    width: 100%;
+    height: 550px;
+}
+
+.hero-visual img {
+    position: absolute;
+}
+
+.deco-background {
+    width: 430px;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.deco-shapes {
+    width: 360px;
+    right: 35px;
+    bottom: 60px;
+    z-index: 2;
+}
+
+.main-photo {
+    width: 380px;
+    right: 15px;
+    bottom: 15px;
+    z-index: 3;
+}
+
+.deco-star-yellow {
+    width: 100px;
+    left: 0;
+    top: 20px;
+    z-index: 4;
+}
+
+.deco-asterisk {
+    width: 65px;
+    right: -15px;
+    bottom: -15px;
+    z-index: 4;
+}
+
+/* --- SECCIÓN INFERIOR (ESTADÍSTICAS) --- */
+.stats-section {
+    margin-top: 60px;
+    width: 100%;
+}
+
+.stats-bar {
+    width: 90%;
+    max-width: 990px;
+    margin: 0 auto;
+    background-color: #F8D046;
+    border: 2px solid #252525;
+    border-radius: 20px;
+    box-shadow: 10px 10px 0px #e0ba3e;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.stat-item {
+    flex: 1; 
+    text-align: center;
+    padding: 10px;
+}
+
+.stat-item h2 {
+    font-size: 1.8rem;
+    margin: 0 0 5px 0;
+}
+
+.stat-item p {
+    font-size: 0.9rem;
+    margin: 0;
+    line-height: 1.4;
+}

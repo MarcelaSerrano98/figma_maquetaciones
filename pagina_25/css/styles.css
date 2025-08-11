@@ -1,0 +1,163 @@
+/* General Body and Page Styles */
+body {
+    background-color: #E8D9D6;
+    color: #000;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden; /* Prevents horizontal scrollbar */
+}
+
+.page-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 2rem 4rem;
+    position: relative;
+}
+
+/* Boba Icon Cluster (Top-Left) */
+.boba-icon-cluster {
+    position: absolute;
+    top: 65px;
+    left: 90px;
+    width: 250px;
+    height: 300px;
+}
+
+.boba-icon-cup {
+    position: absolute;
+    width: 120px;
+    top: 0;
+    left: 0;
+}
+
+.pearl {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+}
+
+.pearl-1 { top: 152px; left: 90px; }
+.pearl-2 { top: 184px; left: 83px; }
+.pearl-3 { top: 168px; left: 44px; }
+.pearl-4 { top: 198px; left: 57px; }
+.pearl-5 { top: 192px; left: 113px; }
+.pearl-6 { top: 159px; left: 125px; }
+
+
+/* Main Hero Section (Text and Image) */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 150px; /* Pushes content down to make space for icon */
+    position: relative;
+}
+
+/* Left side: Text Content */
+.hero-text {
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.hero-text h1 {
+    font-size: 100px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 24px;
+    margin: 0;
+}
+
+.menu-button {
+    width: 227px;
+    height: 66px;
+    background: #000000;
+    border-radius: 40px;
+    padding: 10px 24px;
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Right side: Image Stack */
+.hero-image {
+    flex-basis: 55%;
+    position: relative;
+    height: 650px; /* Define height for positioning context */
+}
+
+.background-shape {
+    position: absolute;
+    width: 550px;
+    top: -50px;
+    left: 50px;
+    z-index: 1;
+}
+
+.drink-image {
+    position: absolute;
+    width: 436px;
+    top: 0;
+    left: 110px;
+    z-index: 2;
+}
+
+.leaf-overlay {
+    position: absolute;
+    width: 178px;
+    top: 275px;
+    left: 240px;
+    z-index: 3;
+}
+
+/* Bottom Info Cards Section */
+.info-cards-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 40px;
+}
+
+.info-card {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 100px;
+    padding: 24px 32px;
+}
+
+.card-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.card-number {
+    font-size: 48px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.card-text {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+}

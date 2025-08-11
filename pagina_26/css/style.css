@@ -1,0 +1,123 @@
+:root {
+    --c1: #FF6B6B;
+    --c2: #FFA94D;
+    --f: #252525a8;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'geo', sans-serif;
+}
+
+@font-face {
+    font-family: 'geo';
+    src: url('/Main/fonts/Geomanist-Regular.otf') format('opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #060A13;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+.hero-section {
+    width: 100%;
+    max-width: 1400px; 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: auto auto; 
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-content {
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 54px;
+    line-height: 1.2;
+    max-width: 500px;
+}
+
+.highlight-text {
+    color: #CD292A;
+}
+
+.burger-gallery img {
+    max-width: 100%;
+    height: auto;
+}
+
+.description {
+    font-size: 18px; 
+    max-width: 450px;
+    color: #e0e0e0;
+}
+
+.cta-button {
+    width: 220px;
+    height: 55px;
+    background-color: #CD292A;
+    border-radius: 28px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.hero-image-container {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-burger-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    transform: translateX(-15%); 
+}
+
+.features-bar {
+    grid-column: 1 / 3; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; 
+    padding-top: 40px;
+}
+
+.feature-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50px; 
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+}

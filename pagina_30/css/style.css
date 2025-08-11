@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'geo', sans-serif;
+}
+
+@font-face {
+    font-family: 'geo';
+    src: url('/Main/fonts/Geomanist-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+    color: inherit;
+}
+
+.page-container {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.hero-section {
+    background-color: #EFC356;
+    padding: 40px 60px 100px 60px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    color: white;
+}
+
+.hero-title {
+    font-size: 56px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.hero-description {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 450px;
+}
+
+.hero-button {
+    background-color: #79B5F8;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 50px;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+.hero-button:hover {
+    background-color: #68a0dc;
+}
+
+.hero-image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-dog-img {
+    max-width: 80%;
+    height: auto;
+    z-index: 5;
+}
+
+.deco-paw {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    opacity: 0.5;
+    width: 150px;
+}
+.deco-circular-text {
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    width: 120px;
+}
+.deco-small-dog {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    width: 100px;
+    z-index: 6;
+}
+
+.features-section {
+    background-color: white;
+    padding: 0 40px 40px 40px;
+}
+
+.features-card-container {
+    background-color: white;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: -80px; 
+    position: relative;
+    z-index: 10;
+}
+
+.feature-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+.feature-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.card-text h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    color: #333;
+}
+
+.card-text p {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.5;
+}
